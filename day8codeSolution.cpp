@@ -9,16 +9,20 @@ int main() {
 
     string word = "", result = "";
     
-    for (int i = 0; i <= s.size(); i++) {
-        if (i == s.size() || s[i] == ' ') {
-            if (!word.empty()) {
+    for (int i = 0; i <= s.size(); i++) 
+    {
+        if (i == s.size() || s[i] == ' ') 
+        {
+            if (!word.empty()) 
+            {
                 if (result == "")
                     result = word;
                 else
                     result = word + " " + result;
             }
             word = "";
-        } else {
+        } else 
+        {
             word += s[i];
         }
     }
@@ -32,3 +36,4 @@ int main() {
 
     return 0;
 }
+
